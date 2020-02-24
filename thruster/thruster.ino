@@ -16,8 +16,10 @@ pwm.setPWMFreq(SERVO_FREQ);
 pinMode(LED_BUILTIN, OUTPUT);
 
 digitalWrite(LED_BUILTIN, LOW); 
-pwm.writeMicroseconds(0, 1800);
-delay(6000);
+//pwm.writeMicroseconds(0, 0);
+//delay(6000);
+//pwm.writeMicroseconds(0, 1500); 
+//delay(8000); 
 }  
 
 void loop() {
