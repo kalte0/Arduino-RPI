@@ -31,15 +31,15 @@ pinMode(LED_BUILTIN, OUTPUT);
 
 
 void loop() {
-pwm.writeMicroseconds(0,1500);
+/*pwm.writeMicroseconds(0,1500);
 delay(5000); 
 pwm.writeMicroseconds(0,1700);
-delay(5000); 
+delay(5000); */
 
 	if (Serial.available()) { //When the code gets the latest Serial input:
 		int inChar = Serial.read(); 
 		state = (char)inChar; //Run one of these states depending on what the code read from Serial. 
-			/*switch (state) 
+			switch (state) 
 			{
 				case REVERSE: 
 					matrix.print(13, DEC); 
@@ -63,6 +63,5 @@ delay(5000);
 					break; 
 
 			}
-*/
 	}
 }
